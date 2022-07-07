@@ -30,7 +30,7 @@ beforeEach(function() {
             
             expect(turn.evaluateGuess()).to.equal(true);
         });
-        it('should be able to evaluate an answer', function(){
+        it('should be able to give feedback', function(){
             
             expect(turn.giveFeedback()).to.equal('correct!');
         });
