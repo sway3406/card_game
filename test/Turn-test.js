@@ -2,6 +2,7 @@ const chai = require('chai');
 const expect = chai.expect;
 const Turn = require('../src/Turn');
 const Card = require('../src/Card');
+const {prototypeData} = require('../src/data');
 
 describe('Turn', function() {
 let card;
@@ -12,25 +13,25 @@ beforeEach(function() {
         turn = new Turn('object', card);
         });
 
-        it('should be an instance of Turn', function(){
+        it('should be an instance of Turn', () => {
             expect(turn).to.be.an.instanceOf(Turn);
         });
 
-        it('should be able to return a card', function(){
+        it('should be able to return a card', () => {
 
             expect(turn.returnCard()).to.equal(card);
         });
 
-        it('should be able to return a guess', function(){
+        it('should be able to return a guess', () => {
 
                 expect(turn.returnGuess()).to.equal('object');
         });
 
-        it('should be able to evaluate an answer', function(){
+        it('should be able to evaluate an answer', () => {
             
             expect(turn.evaluateGuess()).to.equal(true);
         });
-        it('should be able to give feedback', function(){
+        it('should be able to give feedback', () => {
             
             expect(turn.giveFeedback()).to.equal('correct!');
         });
