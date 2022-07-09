@@ -15,18 +15,20 @@ class Round {
         return this.deck[this.turns];
     }
     takeTurn(userGuess) {
-        const turn = new Turn(userGuess, this.returnCurrentCard())
+        const turn = new Turn(userGuess, this.returnCurrentCard());
         this.turns++;
         if (turn.evaluateGuess() === false) {
             this.incorrectGuesses.push(this.returnCurrentCard());
-        } 
+      } if (this.turns === 30) {
+            console.log(this.endRound());
+      }  
             return turn.giveFeedback();
     }
     calculatePercentCorrect() {
         return parseInt(((this.turns - this.incorrectGuesses.length) / this.turns) * 100);
     }
     endRound() {
-        return `**Round over** You answered ${this.calculatePercentCorrect()}% of the questions correctly!`
+        return `**ROUND OVER** You answered ${this.calculatePercentCorrect()}% of the questions correctly!`
     }
 }
 
