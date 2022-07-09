@@ -10,6 +10,7 @@ class Deck {
     countCards() {
         return this.cardDeck.length;
     }
+    
 }
 
 module.exports = Deck;
