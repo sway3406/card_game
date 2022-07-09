@@ -32,12 +32,9 @@ describe('Round', () => {
     it('should return the current card', () => {
 
         let currentCard = round.returnCurrentCard();
-        // round.takeTurn();
+
         expect(currentCard).to.equal(deck.cardDeck[0]);
 
-        // round.takeTurn('array');
-
-        // expect(currentCard).to.equal(deck.cardDeck[1]);
 
     });
 
