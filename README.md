@@ -17,7 +17,7 @@ This fun Commandline Flashcard game will test your knowledge about various JavaS
 
 ## Game Play Video
 
-(https://user-images.githubusercontent.com/102925006/178085780-0b6eb084-996b-4de3-a9b0-7895067e6503.mp4)
+https://user-images.githubusercontent.com/102925006/178085780-0b6eb084-996b-4de3-a9b0-7895067e6503.mp4
 
 ## Contributors 
 
