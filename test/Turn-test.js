@@ -24,7 +24,7 @@ beforeEach(function() {
 
         it('should be able to return a guess', () => {
 
-                expect(turn.returnGuess()).to.equal('object');
+            expect(turn.returnGuess()).to.equal('object');
         });
 
         it('should be able to evaluate an answer', () => {
